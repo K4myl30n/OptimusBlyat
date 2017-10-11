@@ -1,22 +1,20 @@
-CREATE TABELE premia (
+CREATE TABLE premia (
     id VARCHAR(20) PRIMARY KEY,
     premia NUMERIC
 );
 
-
-CREATE TABELE dzial (
+CREATE TABLE dzial (
     id INTEGER PRIMARY KEY,
     nazwa VARCHAR(40),
     siedziba VARCHAR(40)
 );
 
-
-CREATE TABELE pracownicy (
+CREATE TABLE pracownicy (
     id VARCHAR(6) PRIMARY KEY,
     nazwisko VARCHAR(20),
-    imie VARCHAR(20)
-    stanowisko VARCHAR(20)
-    data_zatrudnienia VARCHAR(23)
+    imie VARCHAR(20),
+    stanowisko VARCHAR(20),
+    data_zatr VARCHAR(23),
     placa NUMERIC,
     premia NUMERIC,
     id_dzial INTEGER,
