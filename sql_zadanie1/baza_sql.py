@@ -9,7 +9,7 @@ from dane import *
 def main(args):
     con = sqlite3.connect('pracownicy.sqlite3')
     cur = con.cursor()  # utworzenie kursora
-   
+    
     with open('pracownicy.sql', 'r') as plik:
         cur.executescript(plik.read())
          
