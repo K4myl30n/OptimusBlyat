@@ -16,7 +16,7 @@ CREATE TABELE pracownicy (
     nazwisko VARCHAR(20),
     imie VARCHAR(20)
     stanowisko VARCHAR(20)
-    data_zatrudnienia VARCHAR(23)
+    data_zatr VARCHAR(23)
     placa NUMERIC,
     id_dzial INTEGER,
     premia NUMERIC DEFAULT 0,
