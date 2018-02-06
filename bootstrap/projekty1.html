@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="jumbotron">
+      <h1>Strona o Bootstrapie</h1>
+      <p>Projektujemy prosze ja was bardzo</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h2>HTML + FORMS + JS </h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href=".">Strona główna</a>
+            </li>
+            <li class="list-group-item">
+              <a href=".">O mnie</a>
+            </li>
+            <li class="list-group-item">
+              <a href=".">Projekty</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <div class="form-group">
+            <label for="">liczba1</label>
+            <input type="text" class="form-control" id="liczba1" placeholder="">
+
+              <p class="help-block">Wpisz liczbe</p>
+
+            </div>
+          <div class="form-group">
+            <label for="">liczba1</label>
+            <input type="text" class="form-control" id="liczba2" placeholder="">
+
+              <p class="help-block">Wpisz liczbe</p>
+
+              <div class="card">
+                <div class="card-body">
+                  
+                </div>
+              </div>
+
+            </div>
+            <button type="button" name="button" class="btn btn-primary" onclick="dodaj();">Dodaj</button>
+            <button type="button" name="button" class="btn btn-primary" onclick="odejmij();">Odejmij</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function dodaj() {
+        var liczba1 = parseInt(document.getElementById("liczba1").value);
+        var liczba2 = parseInt(document.getElementById("liczba2").value);
+        alert("Suma: " + (liczba1 + liczba2));
+        document.getElementById("Wynik").innerHTML = liczba1 + liczba2;
+      }
+
+      function odejmij() {
+        var liczba1 = parseInt(document.getElementById("liczba1").value);
+        var liczba2 = parseInt(document.getElementById("liczba2").value);
+        alert("Różnica: " + (liczba1 - liczba2));
+        document.getElementById("Wynik").innerHTML = liczba1 - liczba2;
+      }
+    </script>
+
+  </body>
+</html>
